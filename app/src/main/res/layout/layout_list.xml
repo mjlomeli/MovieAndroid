@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:padding="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/List_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/circleImage"
+        android:text="Title: "
+        android:textColor="@color/light"
+        android:textSize="14sp" />
+
+    <RatingBar
+        android:id="@+id/List_Rating"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/List_Title"
+        android:rating="5"
+        android:theme="@style/List_RatingBar" />
+
+    <TextView
+        android:id="@+id/List_Year"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/List_Title"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="-39dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@+id/List_Director"
+        android:layout_toEndOf="@+id/List_Genres"
+        android:layout_toRightOf="@id/List_Rating"
+        android:text="Year: "
+        android:textAlignment="center"
+        android:textColor="@color/light"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/List_Genres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/List_Title"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/circleImage"
+        android:text="Genres: "
+        android:textColor="@color/light"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/List_Director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/List_Title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="8dp"
+        android:text="Director: "
+        android:textAlignment="textEnd"
+        android:textColor="@color/light"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/List_Stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/List_Genres"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@+id/circleImage"
+        android:text="Stars: "
+        android:textColor="@color/light"
+        android:textSize="8sp" />
+
+</RelativeLayout>

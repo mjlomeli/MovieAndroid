@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fablix_Android</string>
+    <string name="fabflix">Fablix</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="search_movies">Search Movies!</string>
+    <string name="go">Go!</string>
+    <string name="movie_title">Movie Title</string>
+</resources>
